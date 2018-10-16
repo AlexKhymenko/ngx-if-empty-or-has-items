@@ -1,7 +1,7 @@
 import { Directive, EmbeddedViewRef, Input, TemplateRef, ViewContainerRef } from "@angular/core";
 
 @Directive({
-  selector: '[ngxIfArrayEmpty]'
+  selector: '[ngxIfEmpty]'
 })
 export class NgxIfEmptyDirective {
 	private _context: NgxIfArrayEmptyContext = new NgxIfArrayEmptyContext();

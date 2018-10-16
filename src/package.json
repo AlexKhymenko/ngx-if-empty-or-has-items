@@ -1,5 +1,5 @@
 {
-  "name": "ngx-if-array-empty-or-not-empty",
+  "name": "ngx-if-empty-or-has-elements",
   "version": "0.1.0",
   "repository": {
     "type": "git",
@@ -16,13 +16,16 @@
   "bugs": {
     "url": "https://github.com/username/repo/issues"
   },
-  "main": "ngx-if-array-empty-or-not-empty.umd.js",
-  "module": "ngx-if-array-empty-or-not-empty.js",
-  "jsnext:main": "ngx-if-array-empty-or-not-empty.js",
-  "typings": "ngx-if-array-empty-or-not-empty.d.ts",
+  "main": "ngx-if-empty-or-has-elements.umd.js",
+  "module": "ngx-if-empty-or-has-elements.js",
+  "jsnext:main": "ngx-if-empty-or-has-elementsjs",
+  "typings": "ngx-if-empty-or-has-elements.d.ts",
   "peerDependencies": {
     "@angular/core": "^4.0.0",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
   }
 }

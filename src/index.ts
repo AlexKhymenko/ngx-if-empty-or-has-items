@@ -1,22 +1,22 @@
 import { NgModule } from '@angular/core';
-import { NgxIfArrayEmptyDirective } from './ngx-if-array-empty.directive';
-import { NgxIfArrayNotEmptyDirective } from './ngx-if-array-not-empty.directive';
+import { NgxIfEmptyModule } from './ngx-if-empty/ngx-if-empty.module';
+import { NgxIfHasElementsModule } from './ngx-if-not-empty/ngx-if-has-elements.module';
 
 
-export * from './ngx-if-array-empty.directive';
-export * from './ngx-if-array-not-empty.directive';
+export * from './ngx-if-empty/ngx-if-empty.module';
+export * from './ngx-if-not-empty/ngx-if-has-elements.module';
 
 
 @NgModule({
-    imports: [],
-    declarations: [
-        NgxIfArrayEmptyDirective,
-        NgxIfArrayNotEmptyDirective
+    imports: [
+        NgxIfEmptyModule,
+        NgxIfHasElementsModule
     ],
+    declarations: [],
     exports: [
-        NgxIfArrayEmptyDirective,
-        NgxIfArrayNotEmptyDirective
+        NgxIfEmptyModule,
+        NgxIfHasElementsModule
     ]
 })
-export class NgxIfArrayEmptyOrNotEmptyModule {
+export class NgxIfEmptyOrHasElementsModule {
 }

@@ -1,4 +1,4 @@
-import { NgxIfArrayEmptyDirective } from './ngx-if-array-empty.directive';
+import { NgxIfArrayEmptyDirective } from '../ngx-if-not-empty/ngx-if-has-elements.directive';
 
 describe('NgxIfArrayEmptyDirective', () => {
   it('should create an instance', () => {

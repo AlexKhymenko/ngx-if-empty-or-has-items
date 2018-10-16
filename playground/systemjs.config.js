@@ -27,7 +27,7 @@
       // other libraries
       rxjs: 'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
-      'ngx-if-array-empty': '../dist'
+      'ngx-if-empty-or-has-elements': '../dist'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -45,8 +45,8 @@
       rxjs: {
         defaultExtension: 'js'
       },
-      'ngx-if-array-empty-or-not-empty': {
-        main: 'ngx-if-array-empty-or-not-empty.umd.js',
+      'ngx-if-empty-or-has-elements': {
+        main: 'ngx-if-empty-or-has-elements.umd.js',
         defaultExtension: 'js'
       }
     }
