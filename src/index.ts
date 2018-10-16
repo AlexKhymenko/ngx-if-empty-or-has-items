@@ -18,5 +18,5 @@ export * from './ngx-if-array-not-empty.directive';
         NgxIfArrayNotEmptyDirective
     ]
 })
-export class NgxIfArrayEmptyOrNotEmpty {
+export class NgxIfArrayEmptyOrNotEmptyModule {
 }

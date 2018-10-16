@@ -3,7 +3,7 @@ import { Directive, EmbeddedViewRef, Input, TemplateRef, ViewContainerRef } from
 @Directive({
   selector: '[ngxIfArrayEmpty]'
 })
-export class NgxIfArrayEmptyDirective {
+export class NgxIfEmptyDirective {
 	private _context: NgxIfArrayEmptyContext = new NgxIfArrayEmptyContext();
 	private _thenTemplateRef: TemplateRef<NgxIfArrayEmptyContext> | null = null;
 	private _elseTemplateRef: TemplateRef<NgxIfArrayEmptyContext> | null = null;
