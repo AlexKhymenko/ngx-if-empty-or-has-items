@@ -1,4 +1,4 @@
-# ngx-if-array-empty
+# ngx-if-array-empty-or-has-elements
 
 ## Installation
 
@@ -6,6 +6,10 @@ To install this library, run:
 
 ```bash
 $ npm install ngx-if-empty-or-has-elements --save
+
+
+
+make sure You have lodash installed also
 ```
 
 ## Consuming your library
@@ -14,6 +18,10 @@ Once you have published your library to npm, you can import your library in any 
 
 ```bash
 $ npm install ngx-if-empty-or-has-elements
+
+
+ make sure You have lodash installed also
+
 ```
 
 and then from your Angular `AppModule`:
@@ -46,7 +54,7 @@ export class AppModule { }
 
 SharedModule
 
-If you use a SharedModule that you import in multiple other feature modules, you can export the NgxPermissionsModule to make sure you don't have to import it in every module.
+If you use a SharedModule that you import in multiple other feature modules, you can export the NgxIfEmptyOrHasElementsModule to make sure you don't have to import it in every module.
 ```typescript
 @NgModule({
     exports: [
@@ -58,18 +66,21 @@ export class SharedModule { }
 ```
 
 Once your library is imported, you can use its components, directives and pipes in your Angular application:
+This is helper library it uses the same functionality as ngIf but under the hood it uses isEmpty from lodash.
+
+It Checks if value is an empty object, collection, map, or set.
 
 ```xml
 <!-- You can now use your library component in app.component.html -->
-<h1 *ngIfEmpty="arr">
+<h1 *ngxIfEmpty="arr">
   {{title}}
 </h1>
 
-<h1 *ngIfNotEmpty="arr">
+<h1 *ngxIfNotEmpty="arr">
   {{title}}
 </h1>
 
-<h1 *ngIfHasElements="arr">
+<h1 *ngxIfHasElements="arr">
   {{title}}
 </h1>
 <sampleComponent></sampleComponent>
