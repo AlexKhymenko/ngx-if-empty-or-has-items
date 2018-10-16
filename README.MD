@@ -1,4 +1,4 @@
-# ngx-if-array-empty-or-has-elements
+# ngx-if--empty-or-has-elements
 
 ## Installation
 
@@ -14,7 +14,7 @@ make sure You have lodash installed also
 
 ## Consuming your library
 
-Once you have published your library to npm, you can import your library in any Angular application by running:
+You can import your library in any Angular application by running:
 
 ```bash
 $ npm install ngx-if-empty-or-has-elements
