@@ -1,4 +1,6 @@
 # ngx-if--empty-or-has-elements
+ngxIfEmpty - It Checks if value is an empty object, collection, map, or set.
+ngxIfNotEmpty, ngxIfHasElements - It Checks if value is an NOT empty object, collection, map, or set.
 
 ## Installation
 
