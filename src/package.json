@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/repo"
+    "url": "https://github.com/AlexKhymenko/ngx-if-empty-or-has-elements"
   },
   "author": {
     "name": "Oleksandr Khymenko",
@@ -25,7 +25,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/username/repo/issues"
+    "url": "https://github.com/AlexKhymenko/ngx-if-empty-or-has-elements/issues"
   },
   "main": "ngx-if-empty-or-has-elements.umd.js",
   "module": "ngx-if-empty-or-has-elements.js",
