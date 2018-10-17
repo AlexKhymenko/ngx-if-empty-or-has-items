@@ -1,5 +1,7 @@
-# ngx-if--empty-or-has-elements
+# ngx-if-empty-or-has-elements
+
 ngxIfEmpty - It Checks if value is an empty object, collection, map, or set.
+
 ngxIfNotEmpty, ngxIfHasElements - It Checks if value is an NOT empty object, collection, map, or set.
 
 ## Installation
@@ -74,19 +76,31 @@ It Checks if value is an empty object, collection, map, or set.
 
 ```xml
 <!-- You can now use your library component in app.component.html -->
+arr = []
+arrayWithData = []
+
 <h1 *ngxIfEmpty="arr">
-  {{title}}
+   You will see this text
 </h1>
 
-<h1 *ngxIfNotEmpty="arr">
-  {{title}}
+<h1 *ngxIfNotEmpty="arrayWithData">
+  You will see it
 </h1>
 
-<h1 *ngxIfHasElements="arr">
-  {{title}}
+<h1 *ngxIfHasElements="arrayWithData">
+   You will see it
 </h1>
-<sampleComponent></sampleComponent>
 ```
+
+You can also load only ngxIfEmptyModule or ngxIfHasElementsModule seperately 
+@NgModule({
+    exports: [
+        CommonModule,
+        NgxIfEmptyModule,
+        NgxIfHasElementsModule
+    ]
+})
+export class SharedModule { }
 
 ## Development
 
