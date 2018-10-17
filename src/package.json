@@ -10,7 +10,18 @@
     "email": "alexanderkhymenko@gmail.com"
   },
   "keywords": [
-    "angular"
+    "angular",
+    "angular5",
+    "angular6",
+    "angular7",
+    "angular8",
+    "ngIf",
+    "ngIfEmpty",
+    "ngxIfEmpty",
+    "ngIfEmptyArray",
+    "ngIfEmptyObject",
+    "ngxIfEmptyArray",
+    "ngxIfEmptyObject"
   ],
   "license": "MIT",
   "bugs": {
