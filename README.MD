@@ -79,8 +79,8 @@ It Checks if value is an empty object, collection, map, or set.
 
 ```xml
 <!-- You can now use your library component in app.component.html -->
-arr = []
-arrayWithData = []
+arr = [] || {}
+arrayWithData = ['1'] || {id: 1}
 
 <h1 *ngxIfEmpty="arr">
    You will see this text
