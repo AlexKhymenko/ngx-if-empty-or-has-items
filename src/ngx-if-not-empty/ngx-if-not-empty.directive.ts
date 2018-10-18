@@ -19,7 +19,7 @@ export class NgxIfNotEmptyDirective {
 
     @Input()
     set ngxIfNotEmpty(array: any) {
-        this._context.ngIfNotEmpty = array;
+        this._context.ngxIfNotEmpty = array;
         this._context.$implicit = !isEmpty(array);
         this._updateView();
     }
@@ -65,7 +65,7 @@ export class NgxIfNotEmptyDirective {
 
 export class NgxIfNotEmptyContext {
     public $implicit: any = null;
-    public ngIfNotEmpty: any = null;
+    public ngxIfNotEmpty: any = null;
 }
 
 

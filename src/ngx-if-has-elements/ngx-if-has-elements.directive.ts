@@ -19,7 +19,7 @@ export class NgxIfHasElementsDirective {
 
     @Input()
     set ngxIfHasElements(array: any) {
-        this._context.ngIfHasElements = array;
+        this._context.ngxIfHasElements = array;
         this._context.$implicit = !isEmpty(array);
         this._updateView();
     }
@@ -65,7 +65,7 @@ export class NgxIfHasElementsDirective {
 
 export class NgxIfHasElementsContext {
     public $implicit: any = null;
-    public ngIfHasElements: any = null;
+    public ngxIfHasElements: any = null;
 }
 
 
