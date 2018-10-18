@@ -1,10 +1,10 @@
-# ngx-if-empty-or-has-elements
+# ngx-if-empty-or-has-items
 This is support library just to help You answer this question 'in angular template how to check if object is empty', 
 'in angular template how to check if array is empty'.
 
 **_ngxIfEmpty_** - It Checks if value is an empty object, collection, map, or set.
 
-**_ngxIfNotEmpty_**, _**ngxIfHasElements**_ - It Checks if value is an NOT empty object, collection, map, or set.
+**_ngxIfNotEmpty_**, _**ngxIfHasItems**_ - It Checks if value is an NOT empty object, collection, map, or set.
 
 Also This directives have the same functionality as *ngIf so 'then' 'else' is also working
 
@@ -13,7 +13,7 @@ Also This directives have the same functionality as *ngIf so 'then' 'else' is al
 To install this library, run:
 
 ```bash
-$ npm install ngx-if-empty-or-has-elements --save
+$ npm install ngx-if-empty-or-has-items --save
 
 
 
@@ -25,7 +25,7 @@ make sure You have lodash installed also
 You can import your library in any Angular application by running:
 
 ```bash
-$ npm install ngx-if-empty-or-has-elements
+$ npm install ngx-if-empty-or-has-items
 
 
  make sure You have lodash installed also
@@ -41,7 +41,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { NgxIfEmptyOrHasElementsModule } from 'ngx-if-empty-or-has-elements';
+import { NgxIfEmptyOrHasItemsModule } from 'ngx-if-empty-or-has-items';
 
 @NgModule({
   declarations: [
@@ -51,7 +51,7 @@ import { NgxIfEmptyOrHasElementsModule } from 'ngx-if-empty-or-has-elements';
     BrowserModule,
 
     // Specify your library as an import
-    NgxIfEmptyOrHasElementsModule
+    NgxIfEmptyOrHasItemsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -62,12 +62,12 @@ export class AppModule { }
 
 SharedModule
 
-If you use a SharedModule that you import in multiple other feature modules, you can export the NgxIfEmptyOrHasElementsModule to make sure you don't have to import it in every module.
+If you use a SharedModule that you import in multiple other feature modules, you can export the NgxIfEmptyOrHasItemsModule to make sure you don't have to import it in every module.
 ```typescript
 @NgModule({
     exports: [
         CommonModule,
-        NgxIfEmptyOrHasElementsModule
+        NgxIfEmptyOrHasItemsModule
     ]
 })
 export class SharedModule { }
@@ -97,14 +97,14 @@ arrayWithData = ['1'] || {id: 1}
 ```
 
 
-You can also load only ngxIfEmptyModule or NgxIfHasElementsModule separately 
+You can also load only ngxIfEmptyModule or NgxIfHasItemsModule separately 
 ```typescript
 
 @NgModule({
     exports: [
         CommonModule,
         NgxIfEmptyModule,
-        NgxIfHasElementsModule
+        NgxIfHasItemsModule
     ]
 })
 export class SharedModule { }

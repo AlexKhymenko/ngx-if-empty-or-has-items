@@ -21,8 +21,8 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
-    "flatModuleOutFile": "ngx-if-empty-or-has-elements.js",
-    "flatModuleId": "ngx-if-empty-or-has-elements"
+    "flatModuleOutFile": "ngx-if-empty-or-has-items.js",
+    "flatModuleId": "ngx-if-empty-or-has-items"
   },
   "files": [
     "./index.ts"

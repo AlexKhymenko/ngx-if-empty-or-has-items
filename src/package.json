@@ -1,9 +1,9 @@
 {
-  "name": "ngx-if-empty-or-has-elements",
-  "version": "0.1.10",
+  "name": "ngx-if-empty-or-has-items",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlexKhymenko/ngx-if-empty-or-has-elements"
+    "url": "https://github.com/AlexKhymenko/ngx-if-empty-or-has-items"
   },
   "author": {
     "name": "Oleksandr Khymenko",
@@ -25,12 +25,12 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlexKhymenko/ngx-if-empty-or-has-elements/issues"
+    "url": "https://github.com/AlexKhymenko/ngx-if-empty-or-has-items/issues"
   },
-  "main": "ngx-if-empty-or-has-elements.umd.js",
-  "module": "ngx-if-empty-or-has-elements.js",
-  "jsnext:main": "ngx-if-empty-or-has-elementsjs",
-  "typings": "ngx-if-empty-or-has-elements.d.ts",
+  "main": "ngx-if-empty-or-has-items.umd.js",
+  "module": "ngx-if-empty-or-has-items.js",
+  "jsnext:main": "ngx-if-empty-or-has-itemsjs",
+  "typings": "ngx-if-empty-or-has-items.d.ts",
   "peerDependencies": {
     "@angular/core": "^4.0.0",
     "rxjs": "^5.1.0",

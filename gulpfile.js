@@ -120,7 +120,7 @@ gulp.task('rollup:umd', function () {
         // The name to use for the module for UMD/IIFE bundles
         // (required for bundles with exports)
         // See "name" in https://rollupjs.org/#core-functionality
-        name: 'ngx-if-empty-or-has-elements',
+        name: 'ngx-if-empty-or-has-items',
 
         // See "globals" in https://rollupjs.org/#core-functionality
         globals: {
@@ -137,7 +137,7 @@ gulp.task('rollup:umd', function () {
       }
 
     }))
-    .pipe(rename('ngx-if-empty-or-has-elements.umd.js'))
+    .pipe(rename('ngx-if-empty-or-has-items.umd.js'))
     .pipe(gulp.dest(distFolder));
 });
 
