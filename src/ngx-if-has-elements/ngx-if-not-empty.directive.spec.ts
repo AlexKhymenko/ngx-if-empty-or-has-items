@@ -1,4 +1,4 @@
-import { IsArrayNotEmptyDirective } from './ngx-if-has-elements.directive';
+import { IsArrayNotEmptyDirective } from './ngx-if-has-items.directive';
 
 describe('IsArrayNotEmptyDirective', () => {
   it('should create an instance', () => {

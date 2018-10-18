@@ -2,39 +2,39 @@ import { Directive, EmbeddedViewRef, Input, TemplateRef, ViewContainerRef } from
 import isEmpty from 'lodash/isEmpty'
 
 @Directive({
-	selector: "[ngxIfHasElements]"
+	selector: "[ngxIfHasItems]"
 })
-export class NgxIfHasElementsDirective {
+export class NgxIfHasItemsDirective {
 
-	private _context: NgxIfHasElementsContext = new NgxIfHasElementsContext();
-	private _thenTemplateRef: TemplateRef<NgxIfHasElementsContext> | null = null;
-	private _elseTemplateRef: TemplateRef<NgxIfHasElementsContext> | null = null;
-	private _thenViewRef: EmbeddedViewRef<NgxIfHasElementsContext> | null = null;
-	private _elseViewRef: EmbeddedViewRef<NgxIfHasElementsContext> | null = null;
+	private _context: NgxIfHasItemsContext = new NgxIfHasItemsContext();
+	private _thenTemplateRef: TemplateRef<NgxIfHasItemsContext> | null = null;
+	private _elseTemplateRef: TemplateRef<NgxIfHasItemsContext> | null = null;
+	private _thenViewRef: EmbeddedViewRef<NgxIfHasItemsContext> | null = null;
+	private _elseViewRef: EmbeddedViewRef<NgxIfHasItemsContext> | null = null;
 
-	constructor(private _viewContainer: ViewContainerRef, templateRef: TemplateRef<NgxIfHasElementsContext>) {
+	constructor(private _viewContainer: ViewContainerRef, templateRef: TemplateRef<NgxIfHasItemsContext>) {
 		this._thenTemplateRef = templateRef;
 	}
 
 
     @Input()
-    set ngxIfHasElements(array: any) {
-        this._context.ngxIfHasElements = array;
+    set ngxIfHasItems(array: any) {
+        this._context.ngxIfHasItems = array;
         this._context.$implicit = !isEmpty(array);
         this._updateView();
     }
 
 	@Input()
-	set ngxIfHasElementsThen(templateRef: TemplateRef<NgxIfHasElementsContext> | null) {
-		assertTemplate("ngxIfHasElementsThen", templateRef);
+	set ngxIfHasItemsThen(templateRef: TemplateRef<NgxIfHasItemsContext> | null) {
+		assertTemplate("ngxIfHasItemsThen", templateRef);
 		this._thenTemplateRef = templateRef;
 		this._thenViewRef = null;  // clear previous view if any.
 		this._updateView();
 	}
 
 	@Input()
-	set ngxIfHasElementsElse(templateRef: TemplateRef<NgxIfHasElementsContext> | null) {
-		assertTemplate("ngxIfHasElementsElse", templateRef);
+	set ngxIfHasItemsElse(templateRef: TemplateRef<NgxIfHasItemsContext> | null) {
+		assertTemplate("ngxIfHasItemsElse", templateRef);
 		this._elseTemplateRef = templateRef;
 		this._elseViewRef = null;  // clear previous view if any.
 		this._updateView();
@@ -63,9 +63,9 @@ export class NgxIfHasElementsDirective {
 	}
 }
 
-export class NgxIfHasElementsContext {
+export class NgxIfHasItemsContext {
     public $implicit: any = null;
-    public ngxIfHasElements: any = null;
+    public ngxIfHasItems: any = null;
 }
 
 
