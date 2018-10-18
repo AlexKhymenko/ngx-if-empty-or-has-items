@@ -17,26 +17,34 @@ export class NgxIfHasElementsDirective {
 	}
 
 	@Input()
-	set ngxIsNotEmpty(array: any) {
+	set ngxIfNotEmpty(array: any) {
 		this._context.$implicit = this._context.ngIf = !isEmpty(array);
 		this._updateView();
 	}
 
 	@Input()
-	set ngxIsNotEmptyThen(templateRef: TemplateRef<NgxIfNotEmptyContext> | null) {
+	set ngxIfNotEmptyThen(templateRef: TemplateRef<NgxIfNotEmptyContext> | null) {
 		assertTemplate("ngxIfNotEmptyThen", templateRef);
 		this._thenTemplateRef = templateRef;
 		this._thenViewRef = null;  // clear previous view if any.
 		this._updateView();
 	}
 
+
+
 	@Input()
-	set ngxIsNotEmptyElse(templateRef: TemplateRef<NgxIfNotEmptyContext> | null) {
+	set ngxIfNotEmptyElse(templateRef: TemplateRef<NgxIfNotEmptyContext> | null) {
 		assertTemplate("ngxIfNotEmptyElse", templateRef);
 		this._elseTemplateRef = templateRef;
 		this._elseViewRef = null;  // clear previous view if any.
 		this._updateView();
 	}
+
+    @Input()
+    set ngxIfHasElements(array: any) {
+        this._context.$implicit = this._context.ngIf = !isEmpty(array);
+        this._updateView();
+    }
 
 	@Input()
 	set ngxIfHasElementsThen(templateRef: TemplateRef<NgxIfNotEmptyContext> | null) {
