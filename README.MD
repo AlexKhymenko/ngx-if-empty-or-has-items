@@ -6,7 +6,7 @@ This is support library just to help You answer this question 'in angular templa
 
 **_ngxIfNotEmpty_**, _**ngxIfHasElements**_ - It Checks if value is an NOT empty object, collection, map, or set.
 
-Also This directives has the same functionality as *ngIf so 'then' 'else' is also working
+Also This directives have the same functionality as *ngIf so 'then' 'else' is also working
 
 ## Installation
 
@@ -108,21 +108,6 @@ You can also load only ngxIfEmptyModule or NgxIfHasElementsModule separately
     ]
 })
 export class SharedModule { }
-```
-
-
-## Development
-
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
-
-```bash
-$ npm run build
-```
-
-To lint all `*.ts` files:
-
-```bash
-$ npm run lint
 ```
 
 ## License
