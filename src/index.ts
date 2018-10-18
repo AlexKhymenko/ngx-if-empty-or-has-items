@@ -12,7 +12,6 @@ export * from './ngx-if-not-empty/ngx-if-has-elements.module';
         NgxIfEmptyModule,
         NgxIfHasElementsModule
     ],
-    declarations: [],
     exports: [
         NgxIfEmptyModule,
         NgxIfHasElementsModule

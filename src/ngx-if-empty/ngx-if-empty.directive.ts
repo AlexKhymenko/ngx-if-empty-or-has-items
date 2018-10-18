@@ -15,23 +15,23 @@ export class NgxIfEmptyDirective {
 	}
 
 	@Input()
-	set ngxIfArrayEmpty(array: any) {
+	set ngxIfEmpty(array: any) {
 		const isArrayEmpty = !array || (!!array && Array.isArray(array) && !array.length);
 		this._context.$implicit = this._context.ngIf = isArrayEmpty;
 		this._updateView();
 	}
 
 	@Input()
-	set ngxIfArrayEmptyThen(templateRef: TemplateRef<NgxIfArrayEmptyContext> | null) {
-		assertTemplate("ngxIfArrayEmptyThen", templateRef);
+	set ngxIfEmptyThen(templateRef: TemplateRef<NgxIfArrayEmptyContext> | null) {
+		assertTemplate("ngxIfEmptyThen", templateRef);
 		this._thenTemplateRef = templateRef;
 		this._thenViewRef = null;  // clear previous view if any.
 		this._updateView();
 	}
 
 	@Input()
-	set ngxIfArrayEmptyElse(templateRef: TemplateRef<NgxIfArrayEmptyContext> | null) {
-		assertTemplate("ngxIfArrayEmptyElse", templateRef);
+	set ngxIfEmptyElse(templateRef: TemplateRef<NgxIfArrayEmptyContext> | null) {
+		assertTemplate("ngxIfEmptyElse", templateRef);
 		this._elseTemplateRef = templateRef;
 		this._elseViewRef = null;  // clear previous view if any.
 		this._updateView();
