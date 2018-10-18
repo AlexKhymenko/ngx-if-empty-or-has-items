@@ -101,7 +101,7 @@ arrayOrObjWithData = ['1'] || {id: 1}
 ```
 
 
-You can also load only ngxIfEmptyModule or NgxIfHasItemsModule separately 
+You can also load only ngxIfEmptyModule or NgxIfHasItemsModule or NgxIfNotEmptyModule separately just choose what you use most common
 ```typescript
 
 @NgModule({
