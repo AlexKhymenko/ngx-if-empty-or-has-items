@@ -2,7 +2,7 @@ import { Directive, EmbeddedViewRef, Input, TemplateRef, ViewContainerRef } from
 import isEmpty from 'lodash/isEmpty'
 
 @Directive({
-	selector: "[ngxIfNotEmpty][ngxIfHasElements]"
+	selector: "[ngxIfNotEmpty],[ngxIfHasElements]"
 })
 export class NgxIfHasElementsDirective {
 
