@@ -1,4 +1,5 @@
 import { Directive, EmbeddedViewRef, Input, TemplateRef, ViewContainerRef } from "@angular/core";
+import isEmpty from 'lodash/isEmpty'
 
 @Directive({
   selector: '[ngxIfEmpty]'
@@ -16,8 +17,7 @@ export class NgxIfEmptyDirective {
 
 	@Input()
 	set ngxIfEmpty(array: any) {
-		const isArrayEmpty = !array || (!!array && Array.isArray(array) && !array.length);
-		this._context.$implicit = this._context.ngIf = isArrayEmpty;
+		this._context.$implicit = this._context.ngIf = isEmpty(array);
 		this._updateView();
 	}
 
