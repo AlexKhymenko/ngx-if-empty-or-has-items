@@ -87,6 +87,10 @@ arrayWithData = ['1'] || {id: 1}
    You will see this text
 </h1>
 
+<!-- You can also use 'as' syntax to store data in variable -->
+<h1 *ngxIfNotEmpty="object$ | async as obj">
+    {{obj.name}}
+</h1>
 <h1 *ngxIfNotEmpty="arrayWithData">
   You will see it
 </h1>
@@ -103,7 +107,9 @@ You can also load only ngxIfEmptyModule or NgxIfHasItemsModule separately
 @NgModule({
     exports: [
         CommonModule,
+        
         NgxIfEmptyModule,
+        NgxIfNotEmptyModule,
         NgxIfHasItemsModule
     ]
 })
