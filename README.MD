@@ -81,7 +81,7 @@ It Checks if value is an empty object, collection, map, or set.
 ```xml
 <!-- You can now use your library component in app.component.html -->
 arr = [] || {}
-arrayWithData = ['1'] || {id: 1}
+arrayOrObjWithData = ['1'] || {id: 1}
 
 <h1 *ngxIfEmpty="arr">
    You will see this text
@@ -91,11 +91,11 @@ arrayWithData = ['1'] || {id: 1}
 <h1 *ngxIfNotEmpty="object$ | async as obj">
     {{obj.name}}
 </h1>
-<h1 *ngxIfNotEmpty="arrayWithData">
+<h1 *ngxIfNotEmpty="arrayOrObjWithData">
   You will see it
 </h1>
 
-<h1 *ngxIfHasItems="arrayWithData">
+<h1 *ngxIfHasItems="arrayOrObjWithData">
    You will see it
 </h1>
 ```
