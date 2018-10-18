@@ -91,7 +91,7 @@ arrayWithData = ['1'] || {id: 1}
   You will see it
 </h1>
 
-<h1 *ngxIfHasElements="arrayWithData">
+<h1 *ngxIfHasItems="arrayWithData">
    You will see it
 </h1>
 ```
