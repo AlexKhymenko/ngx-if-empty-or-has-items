@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { NgxIfHasElementsDirective } from './ngx-if-has-elements.directive';
 import { NgxIfNotEmptyDirective } from './ngx-if-not-empty.directive';
 
 
