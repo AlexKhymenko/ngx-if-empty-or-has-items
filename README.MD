@@ -91,7 +91,6 @@ If you use a SharedModule that you import in multiple other feature modules, you
 export class SharedModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
 This is helper library it uses the same functionality as ngIf but under the hood it uses isEmpty from lodash.
 
 It Checks if value is an empty object, collection, map, or set.
