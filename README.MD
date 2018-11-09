@@ -17,9 +17,6 @@ To install this library, run:
 ```bash
 $ npm install ngx-if-empty-or-has-items --save
 
-
-
-make sure You have lodash installed also
 ```
 
 ## Consuming your library
@@ -27,11 +24,7 @@ make sure You have lodash installed also
 You can import your library in any Angular application by running:
 
 ```bash
-$ npm install ngx-if-empty-or-has-items
-
-
- make sure You have lodash installed also
-
+$ npm install ngx-if-empty-or-has-items --save
 ```
 
 and then from your Angular `AppModule`:
