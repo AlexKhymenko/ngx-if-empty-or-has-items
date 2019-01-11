@@ -2,6 +2,8 @@
 This is support library just to help You answer this question 'in angular template how to check if object is empty', 
 'in angular template how to check if array is empty'.
 
+**_This is stable version_** and will change only if angular makes changes to ngIf
+
 **_ngxIfEmpty_** - It Checks if value is an empty object, collection, map, or set.
 
 **_ngxIfNotEmpty_**, _**ngxIfHasItems**_ - It Checks if value is an _**NOT**_ empty object, collection, map, or set.
