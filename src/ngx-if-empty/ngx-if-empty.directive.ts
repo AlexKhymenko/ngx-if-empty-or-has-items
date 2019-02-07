@@ -1,4 +1,4 @@
-import { Directive, EmbeddedViewRef, Input, TemplateRef, ViewContainerRef } from "@angular/core";
+import { ChangeDetectorRef, Directive, EmbeddedViewRef, Input, TemplateRef, ViewContainerRef } from "@angular/core";
 import isEmpty from 'lodash/isEmpty'
 
 @Directive({
@@ -11,7 +11,8 @@ export class NgxIfEmptyDirective {
     private _thenViewRef: EmbeddedViewRef<NgxIfEmptyContext> | null = null;
     private _elseViewRef: EmbeddedViewRef<NgxIfEmptyContext> | null = null;
 
-    constructor(private _viewContainer: ViewContainerRef, templateRef: TemplateRef<NgxIfEmptyContext>) {
+    constructor(private _viewContainer: ViewContainerRef, templateRef: TemplateRef<NgxIfEmptyContext>,
+                private cd: ChangeDetectorRef) {
         this._thenTemplateRef = templateRef;
     }
 
@@ -58,6 +59,9 @@ export class NgxIfEmptyDirective {
                 }
             }
         }
+
+
+        this.cd.markForCheck();
     }
 
 }
