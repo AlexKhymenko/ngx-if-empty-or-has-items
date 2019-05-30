@@ -1,6 +1,6 @@
 {
   "name": "ngx-if-empty-or-has-items",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/AlexKhymenko/ngx-if-empty-or-has-items"
@@ -34,9 +34,7 @@
   "jsnext:main": "ngx-if-empty-or-has-itemsjs",
   "typings": "ngx-if-empty-or-has-items.d.ts",
   "peerDependencies": {
-    "@angular/core": "^4.0.0",
-    "rxjs": "^5.1.0",
-    "zone.js": "^0.8.4"
+
   },
   "dependencies": {
     "lodash": "^4.17.11"
